@@ -1,0 +1,9 @@
+table, th, td {
+    border: 1px solid seagreen;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-collapse: collapse;
+}
