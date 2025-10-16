@@ -6,7 +6,7 @@ function button() {
 
     input.addEventListener("keydown", function(event) {
         if (event.key == 'Enter') {
-            greeting.textContent = 'You searched for ${input.value}';
+            greeting.textContent = `You searched for ${input.value}`;
         }
     });
 }
