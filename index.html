@@ -2,21 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Finance Tracker 🙃</title>
+    <title>FinTrack</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="http://fonts.googleapis.com/css?family=Oxygen Mono" rel="stylesheet">
 </head>
-<body id="dark-mode">
-    <table>
-        <tr>
-            <th>STOCK</th>
-            <th>PRICE</th>
-            <th>CHANGE</th>
-            <th>ANALYTICS</th>
-            <th>GRAPH</th>
-        </tr>
-        <tr>
-        </tr>
-    </table>
+<body class="dark-mode">
+    <header>FINTRACK</header>
+    <p id="greeting"></p>
+    <div>
+        <table class="stocks-table">
+            <tr class="stocks-table-rows">
+                <th>STOCK</th>
+                <th>PRICE</th>
+                <th>CHANGE</th>
+                <th>ANALYTICS</th>
+                <th>GRAPH</th>
+            </tr>
+            <tr class="stocks-table-rows">
+                <td>AAPL</td>
+                <td>245.27</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+            </tr> 
+            <tr class="stocks-table-rows">
+                <td>INTC</td>
+                <td>36.33</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+            </tr> 
+            <tr class="stocks-table-rows">
+                <td>GOOGL</td>
+                <td>236.57</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+            </tr> 
+        </table>
+    </div>
+
+    <div class="stocks-form">
+        <form>
+            <span><strong><h3 style="text-align: center;">STOCK DETAILS</h4></strong></span>
+            <label style="padding-top: 9%; padding-right: 2%; margin-bottom: 10px;">STOCK SEARCH:
+                <input type="text" id="stock-name" placeholder="STOCK NAME">
+            </label>
+        </form>
+    </div>
+
+    <script src="scripts/test.js" ></script>
 </body>
 </html>
