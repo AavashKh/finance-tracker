@@ -1,12 +1,12 @@
 import yfinance as yf
 import time
-import requests
-from fake_useragent import UserAgent
 import csv
 
 # Setup for yfinance (using a session is best practice)
 
-tickers = ['AMZN', 'INTC', 'LLY', 'META', 'MSFT', 'NFLX', 'NVDA', 'ORCL', 'PATH', 'PRME']
+tickers = ['AMZN', 'INTC', 'LLY', 'META', 'MSFT',
+           'NFLX', 'NVDA', 'ORCL', 'PATH', 'PRME']
+
 data = {} # Still good for checking data internally
 
 # 1. Open the file ONCE outside the loop (using 'w' for initial write)
@@ -14,7 +14,7 @@ with open('ticker_price.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
     
     # 2. Write the Header Row ONCE
-    writer.writerow(['Ticker', 'Current Price']) 
+    writer.writerow(['Ticker', 'Price']) 
 
     for ticker in tickers:
         try:
