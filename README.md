@@ -31,7 +31,7 @@ cd backend
 python3 -m venv venv
 source venv/bin/activate # Use this before working on the backend
 pip install -r requirements.txt
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
+uvicorn main:app --reload --host 0.0.0.0 --port 8000 # Use this as well to start your local server
 ```
 ### Frontend Setup (Vite + React)
 ```bash
