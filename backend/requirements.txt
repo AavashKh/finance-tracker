@@ -1,0 +1,19 @@
+# --- Core API Infrastructure ---
+fastapi==0.109.0
+uvicorn[standard]==0.27.0  # High-performance ASGI server
+
+# --- Database & Persistence ---
+psycopg2-binary==2.9.9    # PostgreSQL adapter for Python
+sqlalchemy==2.0.25        # SQL Toolkit / ORM for data modeling
+alembic==1.13.1           # Database migration tool (Audit Trail)
+
+# --- Financial Logic & Data Analysis ---
+pandas==2.2.0             # Data manipulation (The "Excel" of Python)
+numpy==1.26.3             # Numerical computing (Matrix math for portfolios)
+yfinance==0.2.36          # Market data downloader (The Ticker Feed)
+
+# --- Security & Validation ---
+pydantic[email]==2.5.3    # Data validation (Type-safety for finance)
+python-jose[cryptography] # JWT Authentication (Securing your vault)
+passlib[bcrypt]           # Password hashing
+python-dotenv==1.0.0      # Storing API Keys/Secrets securely
