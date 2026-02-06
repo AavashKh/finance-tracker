@@ -3,9 +3,9 @@ High performance financial dashboard built with **FastAPI, React and PostgreSQL*
 
 ## Tech Stack
 **Frontend:** Vite + React + TypeScript + Tailwind CSS\
-**Backend:** FastAPI (For fast API calls)
-**Charts:** ChartJS (Alpha/Beta trends Visualization)
-**Database:** PostgreSQL (Server : Raspberry PI 4)
+**Backend:** FastAPI (For fast API calls)\
+**Charts:** ChartJS (Alpha/Beta trends Visualization)\
+**Database:** PostgreSQL (Server : Raspberry PI 4)\
 
 ## System Architectures
 The app follows a **Tier-1 Architecture**:
