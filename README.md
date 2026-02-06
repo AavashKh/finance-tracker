@@ -2,7 +2,7 @@
 High performance financial dashboard built with **FastAPI, React and PostgreSQL** to help achieve sub 100ms UI updates.
 
 ## Tech Stack
-**Frontend:** Vite + React + TypeScript + Tailwind CSS
+**Frontend:** Vite + React + TypeScript + Tailwind CSS\
 **Backend:** FastAPI (For fast API calls)
 **Charts:** ChartJS (Alpha/Beta trends Visualization)
 **Database:** PostgreSQL (Server : Raspberry PI 4)
