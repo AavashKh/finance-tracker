@@ -1,34 +1,33 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { DashboardLayout } from './layouts/DashboardLayout'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+    <DashboardLayout>
+
+      <div className='space-y-6'>
+        <h1 className='text-2xl font-bold text-white'>Financial Dashboard</h1>
+
+        <div className='p-6 bg-app-surface border border-app-muted/20 rounded-xl shadow-fin'>
+          <p className='text-app-muted mb-4'>Metric Tracking Engine</p>
+
+          <button
+            onClick={() => setCount((count) => count + 1)}
+            className='px-4 py-2 bg-gain text-app-bg font-bold rounded-lg transition-transform active:scale-95'
+          > 
+            Incremental Gains: {count}
+            </button>
+        </div>
+
+        <p className='text-app-muted text-sm'>
+          System status: <span className='text-gain'>Operational</span>
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+    </DashboardLayout>
   )
 }
 
